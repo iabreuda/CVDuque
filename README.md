@@ -116,3 +116,37 @@ mv laravel/* .
 ```
 php artisan serve
 ```
+
+## Database
+
+Log no database usando ``mysql -u root -p``
+
+### Criando um novo database
+
+```
+CREATE DATABASE duque;
+USE duque
+CREATE USER '<nome_usuario>'@'localhost' IDENTIFIED BY '<senha_usuario>';
+GRANT ALL ON duque.* TO 'duque'@'localhost';
+```
+
+### Criando um novo usuario
+Log no database usando
+```
+mysql -u duque -p
+USE duque
+```
+
+### Configurar o laravel para acessar o database
+
+```
+DB_DATABASE=<db_nome>
+DB_USERNAME=<db_usuario>
+DB_PASSWORD=<db_senha>
+```
+
+### Criando as tabelas no database
+
+```
+php artisan migrate
+```
