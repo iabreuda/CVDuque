@@ -106,3 +106,9 @@ Execute o comando para instalar o laravel e suas dependencias:
 composer create-project laravel/laravel --prefer-dist
 mv laravel/* .
 ```
+
+### Inicializando o servidor laravel
+
+```
+php artisan serve
+```
