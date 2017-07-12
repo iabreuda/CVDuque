@@ -8,10 +8,14 @@ Uma serie de dependencias devem ser instaladas para facilitar o desenvolvimento 
 sudo apt-get install php7.0
 sudo apt-get install php7.0-zip
 sudo apt-get install php-mbstring
+sudo apt-get install phpmyadmin
+sudo apt-get install php-gettext
 sudo apt-get install git
 sudo apt-get install composer
 sudo apt-get install php-codesniffer
 sudo apt-get install phpmd
+sudo apt-get install phpmyadmin
+sudo apt-get install mysql-server
 ```
 
 ## Instalando o Editor de texto
