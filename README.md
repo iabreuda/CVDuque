@@ -95,3 +95,19 @@ lg = !"git lg1"
 ### Workflow do git
 
 ![alt text](https://wac-cdn-a.atlassian.com/dam/jcr:21cf772d-2ba5-4686-8259-fcd6fd2311df/05.svg?cdnVersion=fi)
+
+## Instalando o Laravel
+
+Execute o comando para instalar o laravel e suas dependencias:
+
+```
+composer global require "laravel/installer"
+```
+
+Edit o .profile usando ``vi ~/.profile`` e adicione as seguintes linhas:
+
+```
+if [ -d "$HOME/bin" ] ; then
+  PATH="$PATH:$HOME/.composer/vendor/bin"
+fi
+```
