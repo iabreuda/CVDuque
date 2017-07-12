@@ -36,3 +36,5 @@ git clone https://github.com/iabreuda/CVDuque.git
 ```
 
 ### Workflow do git
+
+![alt text](https://wac-cdn-a.atlassian.com/dam/jcr:21cf772d-2ba5-4686-8259-fcd6fd2311df/05.svg?cdnVersion=fi)
