@@ -8,6 +8,8 @@ Uma serie de dependencias devem ser instaladas para facilitar o desenvolvimento 
 sudo apt-get install php7.0
 sudo apt-get install git
 sudo apt-get install composer
+sudo apt-get install php-codesniffer
+sudo apt-get install phpmd
 ```
 
 ## Instalando o Editor de texto
@@ -24,7 +26,7 @@ sudo apt-get install sublime-text
 Para habilitar o gerenciador de pacotes do sublime
 ```
 ctrl+`
-import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) 
+import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
 ```
 ### Pacotes do sublime a serem instalados
 
@@ -36,8 +38,11 @@ import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d
 - [x] Doc​Blockr
 - [x] Composer
 - [x] Material Theme
+- [x] phpcs
+- [x] Laravel 5 Snippets
+- [x] Laravel 5 Artisan
 
-- Configurando o Material theme
+**Configurando o Material theme**
 
 Va em ``Preferences > Settings - User`` e adicione as seguintes linhas:
 
@@ -54,10 +59,20 @@ Va em ``Preferences > Settings - User`` e adicione as seguintes linhas:
 "material_theme_small_tab"     : true
 ```
 
-- Habilitando o VI mode
+**Habilitando o VI mode e configuracoes padroes**
 
 Va em ``Preferences > Settings - User`` e remova ``[Vintage]`` dos pacotes ignorados.
 
+Adicione as seguintes linhas:
+
+```
+    "default_encoding": "UTF-8",
+    "default_line_ending": "unix",
+    "tab_size": 4,
+    "detect_indentation": false,
+    "translate_tabs_to_spaces": true,
+    "trim_trailing_white_space_on_save": true
+```
 
 ## Utilizacao do Git
 
