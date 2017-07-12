@@ -6,6 +6,8 @@ Uma serie de dependencias devem ser instaladas para facilitar o desenvolvimento 
 
 ```
 sudo apt-get install php7.0
+sudo apt-get install php7.0-zip
+sudo apt-get install php-mbstring
 sudo apt-get install git
 sudo apt-get install composer
 sudo apt-get install php-codesniffer
@@ -101,13 +103,6 @@ lg = !"git lg1"
 Execute o comando para instalar o laravel e suas dependencias:
 
 ```
-composer global require "laravel/installer"
-```
-
-Edit o .profile usando ``vi ~/.profile`` e adicione as seguintes linhas:
-
-```
-if [ -d "$HOME/.composer/vendor/bin" ] ; then
-  PATH="$PATH:$HOME/.composer/vendor/bin"
-fi
+composer create-project laravel/laravel --prefer-dist
+mv laravel/* .
 ```
