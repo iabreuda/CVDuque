@@ -107,7 +107,7 @@ composer global require "laravel/installer"
 Edit o .profile usando ``vi ~/.profile`` e adicione as seguintes linhas:
 
 ```
-if [ -d "$HOME/bin" ] ; then
+if [ -d "$HOME/.composer/vendor/bin" ] ; then
   PATH="$PATH:$HOME/.composer/vendor/bin"
 fi
 ```
