@@ -28,6 +28,37 @@ import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d
 ```
 ### Pacotes do sublime a serem instalados
 
+- [x] SublimeLinter
+- [x] Bracket​Highlighter
+- [x] SublimeCodeIntel
+- [x] Alignment
+- [x] SFTP
+- [x] Doc​Blockr
+- [x] Composer
+- [x] Material Theme
+
+- Configurando o Material theme
+
+Va em ``Preferences > Settings - User`` e adicione as seguintes linhas:
+
+```
+"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
+"theme": "Material-Theme.sublime-theme",
+"always_show_minimap_viewport" : true,
+"bold_folder_labels"           : true,
+"font_options"                 : [ "gray_antialias", "subpixel_antialias" ],    // On retina Mac & Windows
+"indent_guide_options"         : [ "draw_normal", "draw_active" ],   // Highlight active indent
+"line_padding_bottom"          : 3,
+"line_padding_top"             : 3,
+"overlay_scroll_bars"          : "enabled",
+"material_theme_small_tab"     : true
+```
+
+- Habilitando o VI mode
+
+Va em ``Preferences > Settings - User`` e remova ``[Vintage]`` dos pacotes ignorados.
+
+
 ## Utilizacao do Git
 
 ### Clonando o projeto
